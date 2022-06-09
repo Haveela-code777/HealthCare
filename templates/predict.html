@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Heart{% endblock %}
+{% block content %}
+<body style="background-image: url('/static/imgs/ht.jpg'); background-size:180%">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs" style="margin-left: 0%;margin-top: 5%;margin-bottom: 5%;">
+				<h1 class="card text-center" style="background: linear-gradient(to right,rgb(240, 206, 206),rgb(255, 88, 37));">Heart Disease Prediction<span style="font-size:large">Machine Learning</span></h1>
+				<div class="card text-center">
+					<form name="Kform" class="text-start" method="GET">
+						<label>Age</label>
+						<input type="text" placeholder="Enter Your Age" id="age"><br>
+						<label for="sex">SEX:</label><br>
+						<select  id="sex">
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+						</select><br>
+						<label>cp</label>
+						<input type="text" placeholder="Enter cp" id="cp"><br>
+						<label>trestbps</label>
+						<input type="text" placeholder="Enter trestbps" id="trestbps"><br>
+						<label>chol</label>
+						<input type="text" placeholder="Enter chol" id="chol"><br>
+						<label>fbs</label>
+						<input type="text" placeholder="Enter fbs" id="fbs"><br>
+						<label>restecg</label>
+						<input type="text" placeholder="Enter fbs" id="restecg"><br>
+						<label>thalach</label>
+						<input type="text" placeholder="Enter thalach" id="thalach"><br>
+                        <label>exang</label>
+						<input type="text" placeholder="Enter exang" id="exang"><br>
+                        <label>oldpeak</label>
+						<input type="text" placeholder="Enter oldpeak" id="oldpeak"><br>
+                        <label>slope</label>
+						<input type="text" placeholder="Enter slope" id="slope"><br>
+                        <label>ca</label>
+						<input type="text" placeholder="Enter ca" id="ca"><br>
+						<label>thal</label>
+						<input type="text" placeholder="Enter thal" id="thal"><br>
+					</form>
+                    <br>
+                    <button id ="ci-button" style="align-content: flex-start;justify-content: left;" onclick="visfunc()">Submit<i class="fas fa-arrow-right"></i></button>
+					<br><center><a id="result_ml" style="width: max-content; height: 45px;visibility: hidden;"></a></center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/static/js/xhr.js"></script>
+	<script>
+		function visfunc() {
+			document.getElementById("result_ml").style.visibility="visible";
+		}
+	</script>
+</body>
+{% endblock %}  
+
+
+

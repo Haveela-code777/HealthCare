@@ -1,0 +1,69 @@
+img
+{
+max-width: 100%;
+padding: 0%;
+}
+
+form p {
+overflow:auto;
+}
+
+.card p {
+margin:10px 0 20px;
+width:100%;
+float:left;
+}
+.card
+{
+margin: 20px 2px 20px 2px;
+box-shadow:0px 0px 10px 1px grey;
+border-radius: 5px;
+padding-bottom:20px ;
+}
+
+ul
+{
+list-style-type: none;
+}
+
+
+body{
+    background: url(/Static/imgs/contact.jpg);
+    background-size: 150%;
+}
+
+.card{
+    background-color: #fff;
+    padding: 50px 50px 50px 50px;
+}
+input{
+        margin-bottom: 15px;
+        padding:10px;
+        width:100%;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height:40px;
+        font-size: 11pt;
+    }
+button	
+{
+    width: 155px;
+    padding: 12px 10px;
+    outline: none;
+    border: 0;
+    background: linear-gradient(to right,rgb(186, 209, 252),rgb(116, 162, 247));
+    cursor: pointer;
+    border-radius:6px;
+    transition: width 0.5s;
+}
+button i{
+    width: 30px;
+    visibility: hidden;
+}
+button:hover i{
+    visibility:visible;
+}
+button:hover{
+    width: max-content;
+    align-items: center;
+}

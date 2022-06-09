@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{%block content%}
+<body>
+    <div style="height: 700px;background-image: url('/static/imgs/bac.jpg');background-size: 100%;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 blink" style="font-style: italic;">
+                    <p style="margin-top:5em;font-size: 40px;font-weight: bolder;">Health is Wealth</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-image:repeating-linear-gradient(to left, rgb(136, 135, 135),rgb(252, 234, 174));height: 600px;">
+        <div class="pricing" style="height: 600px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4" style="margin-top:6em;">
+                    <div class="card card-body">
+                      <h5 class="card-title text-muted text-uppercase text-center" style="font-weight: bold;">
+                        Heart DISEASE PREDICTION Machine Learning
+                      </h5>
+                      <h6 class="card-title text-muted">Heart and blood vessel disease (also called heart disease) includes numerous problems, many of which are related to a process called atherosclerosis. Atherosclerosis is a condition that develops when a substance called plaque builds up in the walls of the arteries. This buildup narrows the arteries, making it harder for blood to flow through. If a blood clot forms, it can block the blood flow. This can cause a heart attack or stroke. Most people survive their first heart attack and return to their normal lives.</h6>          
+                      <a href="{% url 'heart_ml'%}" class="btn btn-block btn-danger text-uppercase">Know Ur Heart Status</a>  
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-top:6em;margin-left: 30%;">
+                    <div class="card card-body">
+                      <h5 class="card-title text-muted text-uppercase text-center" style="font-weight: bold;">
+                        Heart DISEASE PREDICTION Neural Networks
+                      </h5>
+                      <h6 class="card-title text-muted">Heart and blood vessel disease (also called heart disease) includes numerous problems, many of which are related to a process called atherosclerosis. Atherosclerosis is a condition that develops when a substance called plaque builds up in the walls of the arteries. This buildup narrows the arteries, making it harder for blood to flow through. If a blood clot forms, it can block the blood flow. This can cause a heart attack or stroke. Most people survive their first heart attack and return to their normal lives.</h6>          
+                      <a href="{% url 'heart_ann'%}" class="btn btn-block btn-danger text-uppercase">Know Ur Heart Status</a>  
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+{%endblock%}
